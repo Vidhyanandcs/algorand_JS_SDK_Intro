@@ -29,8 +29,13 @@ Inside .env file
 
 ```
 API="paste your API"
-$ npm start
 
+```
+
+Run this file from terminal
+
+```
+npm start
 ```
 
 ### Create Account
