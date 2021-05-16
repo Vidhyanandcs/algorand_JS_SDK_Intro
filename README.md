@@ -32,7 +32,7 @@ API="paste your API"
 
 ```
 
-Run this file from terminal
+Run from terminal
 
 ```
 npm start
@@ -40,15 +40,24 @@ npm start
 
 ### Create Account
 
-
-### Testnet
-
-
-### Mainnet
+To create an account uncomment `createaddress()` function in index.js file
 
 
-### Account Details
+### Address details
 
+To check the address details on mainnet uncomment `createaddress()` in `index.js` and the following code in `balance.js` and update `account` variable with address
+
+```
+const Mainserver = "https://mainnet-algorand.api.purestake.io/ps2";
+let client=new algosdk.Algodv2(token,Mainserver,port);
+```
+
+To check the address details on testnet uncomment the following code in `createaddress()` in `index.js` and the following code in `balance.js` and update `account` variable with address
+
+```
+const Testserver="https://testnet-algorand.api.purestake.io/ps2"; 
+let client=new algosdk.Algodv2(token,Testserver,port);
+```
 
 
 
