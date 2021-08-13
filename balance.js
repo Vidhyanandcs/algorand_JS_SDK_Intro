@@ -9,12 +9,12 @@ checkbalance = () =>{
     };
 
     /*Use the following code to get info from testnet */
-    //const Testserver="https://testnet-algorand.api.purestake.io/ps2"; 
-    //let client=new algosdk.Algodv2(token,Testserver,port);
+    const Testserver="https://testnet-algorand.api.purestake.io/ps2"; 
+    let client=new algosdk.Algodv2(token,Testserver,port);
 
     /*Use the following code to get info from mainnet */
-    const Mainserver = "https://mainnet-algorand.api.purestake.io/ps2";
-    let client=new algosdk.Algodv2(token,Mainserver,port);
+    // const Mainserver = "https://mainnet-algorand.api.purestake.io/ps2";
+    // let client=new algosdk.Algodv2(token,Mainserver,port);
 
     let account = 'TBP27SKA4ZIV74USO6OZQP7XZIIKELGZE2US6DRN7VRHVHSPR44IQG4MVY';
 
