@@ -54,7 +54,7 @@ async function sendAsset(){
     const enc = new TextEncoder()
     let note= enc.encode("Sending drop");
 
-    let amount = 100;
+    let amount = 1000;
 
     let opttxn = algosdk.makeAssetTransferTxnWithSuggestedParams(sender, recipient, closeRemainderTo, revocationTarget,
         amount, note, assetID, params);

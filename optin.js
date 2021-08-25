@@ -36,7 +36,7 @@ async function optIn(){
 
     //Recovering the recipient address detials from passphrase
     function recoverRecipientAccount(){
-        const passphrase = process.env.PASSPHRASE2;
+        const passphrase = process.env.PASSPHRASE6;
         let recipientAccount = algosdk.mnemonicToSecretKey(passphrase);
         return recipientAccount;
     }
